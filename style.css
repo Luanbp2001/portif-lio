@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 70%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+header{
+    width: 100%;
+    height: 50%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+header > .image{
+    background-image: url('./img/image-front.png');
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+.navegacao > ul{
+    display: flex;
+    padding: 1rem;
+    justify-content: end;
+    gap: 10px;
+    list-style: none;
+}
+h1{
+    font-size: 3rem;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: .8rem;
+}
+li a:hover{
+    background: rgba(80, 78, 78, 0.64);
+    border-radius: 10px;
+}
+.image > h1{
+    height: 70%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+/* MAIN */
+.container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 5rem auto
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(72, 72, 72);
+}
+.open{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1%;
+}
+.line{
+    display: flex;
+}
+.open-icon, .ret{
+    font-size: 1.5rem;
+    color: rgb(152, 151, 149);
+}
+
+p{
+    width: 70%;
+    text-align: center;
+}
+/*Cards-circle*/
+.container-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    
+}
+.cards{
+    width: 80px;
+    height: 80px;
+    background: rgb(163, 96, 125);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.card-text{
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.my-projects{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+}
+.projeto{
+    width: 300px;
+    height: 260px;
+    background: rgb(231, 229, 229);
+    flex: 1 1 300px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+h4{
+    margin-top: 10px;
+}
+.content{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.content .items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.items .icon{
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items a, .items p{
+    color: rgb(72, 72, 72);
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+.icon p{
+    text-align: start;
+    margin-left: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.icon i{
+    color:  rgb(163, 96, 125);
+    font-size: 1.5rem;
+}
+.media{
+    display: flex;
+    gap: 1rem;
+}
+.media i {
+    color:  rgb(163, 96, 125);
+}
+footer{
+    margin-top: 3rem;
+    height: 10%;
+    background-color: rgb(72, 72, 72);
+    display: flex;
+    align-items: center;
+
+}
+.copy{
+    width: 100%;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/*Medias queries*/ 
+
+@media (max-width: 750px){
+    .navegacao > ul{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    h1{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    :root{
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 630px){
+    .content{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        width: 100%;
+    }
+    .items p{
+        font-size: .9rem;
+    }
+    :root{
+        font-size: 60%;
+    }
+
+}
+@media (max-width: 410){
+    .content{
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
