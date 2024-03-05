@@ -84,7 +84,7 @@ li a:hover{
     color: rgb(152, 151, 149);
 }
 
-p{
+.container p{
     width: 70%;
     text-align: center;
 }
@@ -142,8 +142,11 @@ h4{
     align-items: center;
     flex-direction: column;
 }
+.items{
+    width: 19rem;
+    justify-content: center;
+}
 .items .icon{
-    width: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,17 +162,17 @@ h4{
     margin-left: 8px;
     font-size: 1.2rem;
     font-weight: 600;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .icon i{
     color:  rgb(163, 96, 125);
     font-size: 1.5rem;
 }
-.media{
-    display: flex;
-    gap: 1rem;
-}
+
 .media i {
     color:  rgb(163, 96, 125);
+    font-size: 1.5rem;
 }
 footer{
     margin-top: 3rem;
@@ -207,6 +210,7 @@ footer{
         gap: 2rem;
         justify-content: center;
         width: 100%;
+        text-align: center;
     }
     .items p{
         font-size: .9rem;
@@ -220,6 +224,12 @@ footer{
     .content{
         flex-direction: column;
         width: 100%;
+    }
+    #contacts{
+        width: 100%;
+    }
+    .items{
+        justify-content: center;
     }
 
 }
